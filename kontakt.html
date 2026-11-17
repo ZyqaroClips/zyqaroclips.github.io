@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontakt</title>
+<link rel="stylesheet" href="stil.css">
+</head>
+<body>
+<main>
+<h1>Kontakt</h1>
+<p>Du bist Streamer und möchtest einen Clip entfernen lassen, oder hast eine geschäftliche Anfrage? Schreib mir hier. Ich antworte per E-Mail, meist innerhalb von 1&ndash;2 Tagen.</p>
+
+<form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="e1ce26ab-5f33-4b68-a6fb-1af9036b068b">
+  <input type="hidden" name="from_name" value="ZyqaroClips Kontaktformular">
+  <input type="hidden" name="redirect" value="https://zyqaroclips.github.io/danke.html">
+  <input type="checkbox" name="botcheck" class="falle" tabindex="-1" autocomplete="off">
+
+  <label>Worum geht es?
+    <select name="subject" required>
+      <option value="">Bitte auswählen</option>
+      <option>Clip entfernen lassen</option>
+      <option>Geschäftliche Anfrage</option>
+      <option>Sonstiges</option>
+    </select>
+  </label>
+
+  <label>Dein Name
+    <input type="text" name="name" required maxlength="100" autocomplete="name">
+  </label>
+
+  <label>Deine E-Mail-Adresse
+    <input type="email" name="email" required maxlength="200" autocomplete="email">
+  </label>
+
+  <label>Link zum Video (falls es um einen Clip geht)
+    <input type="url" name="video" maxlength="300" placeholder="https://youtube.com/shorts/...">
+  </label>
+
+  <label>Nachricht
+    <textarea name="message" required maxlength="4000"></textarea>
+  </label>
+
+  <label class="zustimmung">
+    <input type="checkbox" name="datenschutz" value="akzeptiert" required>
+    <span>Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und bin einverstanden, dass meine Angaben zur Bearbeitung der Anfrage verwendet werden.</span>
+  </label>
+
+  <button type="submit">Nachricht senden</button>
+</form>
+</main>
+<footer><a href="index.html">Startseite</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutzerklärung</a></footer>
+</body>
+</html>
